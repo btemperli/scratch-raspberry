@@ -9,7 +9,7 @@ echo '--------------------------------------'
 echo ''
 
 cd ./scratch-vm
-npm install
+npm ci
 npm link
 npm run watch &
 cd ..
@@ -20,7 +20,7 @@ echo '--------------------------------------'
 echo ''
 
 cd scratch-gui
-npm install
+npm ci
 npm link scratch-vm
 npm start &
 
