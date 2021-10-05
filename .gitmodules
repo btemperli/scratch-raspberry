@@ -1,6 +1,6 @@
 [submodule "scratch-vm"]
 	path = scratch-vm
-	url = https://github.com/btemperli/scratch-vm
+	url = git@github.com:btemperli/scratch-vm.git
 [submodule "scratch-gui"]
 	path = scratch-gui
-	url = https://github.com/btemperli/scratch-gui
+	url = git@github.com:btemperli/scratch-gui.git
