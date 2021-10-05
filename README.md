@@ -14,7 +14,11 @@ with Python.
 This own scratch build is based on [scratch-vm](https://github.com/LLK/scratch-vm) and [scratch-gui](https://github.com/LLK/scratch-gui).
 Both repositories were forked and supplemented with an own extension based on Scratch Extensions.
 
-## Run local Scratch
+## Running Scratch local
+
+```
+$ ./start.sh
+```
 
 
 
