@@ -1,2 +1,9 @@
-# raspberry-scratch
-Part of my Masterthesis: Build Scratch on a Raspberry Pi and connect it with Python, LoRa and so on...
+# Scratch on a Raspberry
+
+Part of my Masterthesis: Learning networks with new technologies as 
+LoRa and connect it with physical computing.
+
+Scratch: Running Scratch on a Raspberry Pi, add new extensions to
+establish a connection with a running server to connect Scratch 
+with Python.
+
