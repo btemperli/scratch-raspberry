@@ -22,10 +22,12 @@ $ curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 $ sudo apt install nodejs
 $ node --version
 $ npm --version
-$ sudo npm install -g npm
-$ sudo npm install webpack-dev-server -g
-$ sudo npm install -D webpack-cli
+$ npm install -g npm
+$ npm install -g webpack-dev-server
+$ npm install -g webpack-cli
 ```
+
+To install packages without sudo, checkout this one here: https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally
 
 ## Running Scratch locally
 

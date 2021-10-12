@@ -9,9 +9,9 @@ echo '--------------------------------------'
 echo ''
 
 cd ./scratch-vm
-sudo npm ci
-sudo npm link
-sudo npm run watch &
+npm ci
+npm link
+npm run watch &
 cd ..
 
 echo ''
@@ -20,9 +20,9 @@ echo '--------------------------------------'
 echo ''
 
 cd scratch-gui
-sudo npm ci --production
-sudo npm link scratch-vm
-sudo npm start &
+npm ci --production
+npm link scratch-vm
+npm start &
 
 echo '--------------------------------------'
 echo 'System is up and running. Have fun!'

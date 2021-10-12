@@ -10,7 +10,7 @@ echo '--------------------------------------'
 echo ''
 
 cd ./scratch-vm
-sudo npm run watch &
+npm run watch &
 cd ..
 
 echo ''
@@ -20,7 +20,7 @@ echo '--------------------------------------'
 echo ''
 
 cd scratch-gui
-sudo npm start &
+npm start &
 
 echo '--------------------------------------'
 echo 'System is up and running. Have fun!'
