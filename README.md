@@ -14,7 +14,18 @@ with Python.
 This own scratch build is based on [scratch-vm](https://github.com/LLK/scratch-vm) and [scratch-gui](https://github.com/LLK/scratch-gui).
 Both repositories were forked and supplemented with an own extension based on Scratch Extensions.
 
-## Running Scratch local
+## Installation
+
+## Node & NPM
+```
+$ curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+$ sudo apt install nodejs
+$ node --version
+$ npm --version
+$ sudo npm install -g npm
+```
+
+## Running Scratch locally
 
 ```
 $ ./start.sh
