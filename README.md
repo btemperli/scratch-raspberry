@@ -23,6 +23,8 @@ $ sudo apt install nodejs
 $ node --version
 $ npm --version
 $ sudo npm install -g npm
+$ sudo npm install webpack-dev-server -g
+$ sudo npm install -D webpack-cli
 ```
 
 ## Running Scratch locally
@@ -30,6 +32,10 @@ $ sudo npm install -g npm
 ```
 $ ./start.sh
 ```
+
+## Scratch
+
+You can build your own scratch project now on [localhost:8601/](http://localhost:8601/)
 
 
 

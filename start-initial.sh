@@ -4,22 +4,24 @@ echo '--------------------------------------'
 echo 'Starting up local Scratch environment.'
 echo '--------------------------------------'
 echo ''
-echo 'prepare the virtual machine by running'
-echo '$ ./start-initial.sh'
+echo 'preparing virtual machine'
 echo '--------------------------------------'
 echo ''
 
 cd ./scratch-vm
+sudo npm ci
+sudo npm link
 sudo npm run watch &
 cd ..
 
 echo ''
-echo 'prepare gui by running'
-echo '$ ./start-initial.sh'
+echo 'preparing gui'
 echo '--------------------------------------'
 echo ''
 
 cd scratch-gui
+sudo npm ci --production
+sudo npm link scratch-vm
 sudo npm start &
 
 echo '--------------------------------------'
