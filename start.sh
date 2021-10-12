@@ -9,7 +9,7 @@ echo '--------------------------------------'
 echo ''
 
 cd ./scratch-vm
-sudo npm ci --production
+sudo npm ci
 sudo npm link
 sudo npm run watch &
 cd ..
