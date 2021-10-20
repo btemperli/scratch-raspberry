@@ -29,6 +29,12 @@ $ npm install -g webpack-cli
 
 To install packages without sudo, checkout this one here: https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally
 
+## Install submodules
+
+```
+$ git submodule update --init --recursive
+```
+
 ## Running Scratch locally
 
 ```
