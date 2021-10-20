@@ -32,7 +32,7 @@ To install packages without sudo, checkout this one here: https://docs.npmjs.com
 ## Install submodules
 
 ```
-$ git submodule update --init --recursive
+$ git submodule update --init --recursive --progress
 ```
 
 ## Running Scratch locally
