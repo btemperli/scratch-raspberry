@@ -32,6 +32,8 @@ To install packages without sudo, checkout this one here: https://docs.npmjs.com
 ## Install submodules
 
 ```
+$ git submodule foreach --recursive git clean -xfd
+$ git submodule foreach --recursive git reset --hard
 $ git submodule update --init --recursive --progress
 ```
 
