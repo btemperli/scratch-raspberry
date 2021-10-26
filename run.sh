@@ -1,27 +1,25 @@
 #!/bin/bash
 
 echo '--------------------------------------'
-echo 'Starting up local watching Scratch environment.'
+echo 'Running the local Scratch environment.'
 echo '--------------------------------------'
 echo ''
-echo 'prepare the virtual machine by running'
-echo '$ ./start-initial.sh'
+echo 'Start VM'
 echo '--------------------------------------'
 echo ''
 
 cd ./scratch-vm
-npm run watch &
+npm run build &
 cd ..
 
 echo ''
-echo 'prepare gui by running'
-echo '$ ./start-initial.sh'
+echo 'Start GUI'
 echo '--------------------------------------'
 echo ''
 
 cd scratch-gui
-npm start &
+npm run build &
 
 echo '--------------------------------------'
-echo 'System is up and running and watching. Have fun!'
+echo 'System is up and running. Have fun!'
 echo '--------------------------------------'

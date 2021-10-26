@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo '--------------------------------------'
-echo 'Starting up local Scratch environment.'
+echo 'Starting up local watching Scratch environment from zero.'
 echo '--------------------------------------'
 echo ''
 echo 'preparing virtual machine'
@@ -25,5 +25,5 @@ npm link scratch-vm
 npm start &
 
 echo '--------------------------------------'
-echo 'System is up and running. Have fun!'
+echo 'System is up and running and watching. Have fun!'
 echo '--------------------------------------'
