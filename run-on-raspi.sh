@@ -39,7 +39,7 @@ echo 'Start Browser'
 echo '--------------------------------------'
 echo ''
 
-/usr/bin/chromium --kiosk https://localhost:8601
+/usr/bin/chromium --kiosk /home/pi/scratch-raspberry/scratch-gui/build/index.html
 
 echo '--------------------------------------'
 echo 'System is up and running. Have fun!'
