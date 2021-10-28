@@ -2,7 +2,7 @@
 Type=Application
 Encoding=UTF-8
 Name=Scratch
-Comment="Scratch to LoRaWAN"
+Comment=Scratch to LoRaWAN
 Icon=/home/pi/scratch-raspberry/images/scratch_icon.png
 Exec=/home/pi/scratch-raspberry/run-on-raspi.sh
 Terminal=false;
