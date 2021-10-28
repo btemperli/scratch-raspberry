@@ -30,8 +30,8 @@ echo 'Prepare App on Desktop'
 echo '--------------------------------------'
 echo ''
 
-cp run-on-raspi.sh /home/pi/Desktop/ScratchNetwork
-sudo chmod +x /home/pi/Desktop/ScratchNetwork
+cp ScratchNetwork.desktop /home/pi/Desktop/ScratchNetwork.desktop
+sudo chmod +x /home/pi/Desktop/ScratchNetwork.desktop
 
 echo '--------------------------------------'
 echo 'Raspberry Pi is prepared. Have fun!'

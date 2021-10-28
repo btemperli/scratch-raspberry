@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=ScratchNetwork
+Comment="Scratch App to run with LoRaWAN"
+Icon=/home/pi/scratch-raspberry/images/scratch_icon.png
+Exec=/home/pi/scratch-raspberry/run-on-raspi.sh
+Terminal=false;
