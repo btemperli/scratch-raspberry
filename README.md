@@ -79,10 +79,18 @@ on the same level as this repository.
     └── ... 
 
 
-### Prepare for the Raspberry Pi
+### Preparation on the Raspberry Pi
 
 ```
 $ ./prepare-on-raspi.sh
+```
+
+Change the following settings: open the file manager (folder in the main menu)
+
+```
+Edit > Preferences > General
+
+️[✔] Don't ask options on launch executable file
 ```
 
 ### Running
