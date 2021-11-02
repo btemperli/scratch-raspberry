@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Websocket Test</title>
+</head>
+<body>
+
+<div id="output"></div>
+
+<script>
+    const webSocket = new WebSocket('ws://raspberrypi.local:8820');
+    const output = document.getElementById('output');
+    webSocket.onerror = function(e) {
+        console.log(e);
+        output.innerHTML = 'ERROR' + '<br><br>' + e.target.url;
+    }
+    webSocket.onmessage = function(e) {
+        console.log(e);
+        output.innerHTML = output.innerHTML + '<br>' + e.data;
+    }
+    webSocket.send("{'send': 'this is the message'}");
+</script>
+
+</body>
+</html>
