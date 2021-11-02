@@ -26,12 +26,21 @@ echo ''
 # npm run build &
 
 echo ''
+echo 'Prepare Log'
+echo '--------------------------------------'
+echo ''
+
+rm -rf ./log
+mkdir ./log
+touch ./log/server.py.log
+
+echo ''
 echo 'Start Python server'
 echo '--------------------------------------'
 echo ''
 
 cd ../raspberry-scratch-server
-python3 server.py &
+python3 server.py > ./log/server.py.log &
 cd ../scratch-raspberry
 
 echo ''
