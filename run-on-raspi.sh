@@ -33,6 +33,7 @@ echo ''
 rm -rf ./log
 mkdir ./log
 touch ./log/server.py.log
+touch ./log/chromium.log
 
 echo ''
 echo 'Start Python server'
@@ -48,7 +49,7 @@ echo 'Start Browser'
 echo '--------------------------------------'
 echo ''
 
-/usr/bin/chromium --kiosk /home/pi/scratch-raspberry/scratch-gui/build/index.html
+/usr/bin/chromium --kiosk --enable-logging=stderr --v=1 &> ./log/chromium.log /home/pi/scratch-raspberry/scratch-gui/build/index.html
 
 echo '--------------------------------------'
 echo 'System is up and running. Have fun!'
