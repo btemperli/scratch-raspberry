@@ -41,7 +41,7 @@ echo '--------------------------------------'
 echo ''
 
 cd ../raspberry-scratch-server
-python3 server.py > ./log/server.py.log &
+python3 server.py &> ./log/server.py.log
 cd ../scratch-raspberry
 
 echo ''
