@@ -30,15 +30,18 @@ echo 'Prepare Log'
 echo '--------------------------------------'
 echo ''
 
-rm -rf ./log
-mkdir ./log
-touch ./log/server.py.log
-touch ./log/chromium.log
+rm -rf /home/pi/log
+mkdir /home/pi/log
+touch /home/pi/log/server.py.log
+touch /home/pi/log/chromium.log
 
 echo ''
 echo 'Start Python server'
 echo '--------------------------------------'
 echo ''
+
+echo 'python server output' > /home/pi/log/server.py.log
+echo '--------------------------------------' > /home/pi/log/server.py.log
 
 python3 /home/pi/raspberry-scratch-server/server.py &> ./log/server.py.log
 
