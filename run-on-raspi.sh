@@ -40,9 +40,7 @@ echo 'Start Python server'
 echo '--------------------------------------'
 echo ''
 
-cd ../raspberry-scratch-server
-python3 server.py &> ./log/server.py.log
-cd ../scratch-raspberry
+python3 /home/pi/raspberry-scratch-server/server.py &> ./log/server.py.log
 
 echo ''
 echo 'Start Browser'
