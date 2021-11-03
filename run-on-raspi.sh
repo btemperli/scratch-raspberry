@@ -43,7 +43,7 @@ echo ''
 echo 'python server output' > /home/pi/log/server.py.log
 echo '--------------------------------------' > /home/pi/log/server.py.log
 
-python3 /home/pi/raspberry-scratch-server/server.py &> ./log/server.py.log
+python3 /home/pi/raspberry-scratch-server/server.py > ./log/server.py.log &
 
 echo ''
 echo 'Start Browser'
