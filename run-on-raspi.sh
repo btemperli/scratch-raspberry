@@ -1,5 +1,7 @@
-#!/bin/bash
+#!/bin/sh
 
+trap "exit" INT TERM ERR
+trap "kill 0" EXIT
 
 echo '--------------------------------------'
 echo 'Running on Raspberry Pi'
@@ -43,15 +45,19 @@ echo ''
 echo 'python server output' > /home/pi/log/server.py.log
 echo '--------------------------------------' > /home/pi/log/server.py.log
 
-python3 /home/pi/raspberry-scratch-server/server.py > ./log/server.py.log &
+python3 /home/pi/raspberry-scratch-server/server.py handle_exit_signal > ./log/server.py.log &
 
 echo ''
 echo 'Start Browser'
 echo '--------------------------------------'
 echo ''
 
-/usr/bin/chromium --kiosk --enable-logging=stderr --v=1 &> ./log/chromium.log /home/pi/scratch-raspberry/scratch-gui/build/index.html
+echo 'chromium output' > /home/pi/log/chromium.py.log
+echo '--------------------------------------' > /home/pi/log/chromium.py.log
+/usr/bin/chromium --kiosk --enable-logging=stderr --v=1 > ./log/chromium.log /home/pi/scratch-raspberry/scratch-gui/build/index.html &
 
 echo '--------------------------------------'
 echo 'System is up and running. Have fun!'
 echo '--------------------------------------'
+
+wait
