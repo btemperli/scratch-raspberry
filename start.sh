@@ -1,4 +1,6 @@
 #!/bin/bash
+trap "exit" INT TERM ERR
+trap "kill 0" EXIT
 
 echo '--------------------------------------'
 echo 'Starting up local watching Scratch environment.'
@@ -25,3 +27,5 @@ npm start &
 echo '--------------------------------------'
 echo 'System is up and running and watching. Have fun!'
 echo '--------------------------------------'
+
+wait
