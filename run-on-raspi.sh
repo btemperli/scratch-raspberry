@@ -54,7 +54,7 @@ echo ''
 
 echo 'chromium output' > /home/pi/log/chromium.log
 echo '--------------------------------------' > /home/pi/log/chromium.log
-/usr/bin/chromium --kiosk --enable-logging=stderr --v=1 > /home/pi/log/chromium.log /home/pi/scratch-raspberry/scratch-gui/build/index.html &
+/usr/bin/chromium --kiosk --enable-logging --v=1 --user-data-dir=/home/pi/log /home/pi/scratch-raspberry/scratch-gui/build/index.html &
 
 echo '--------------------------------------'
 echo 'System is up and running. Have fun!'
