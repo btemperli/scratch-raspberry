@@ -45,7 +45,7 @@ echo ''
 echo 'python server output' > /home/pi/log/server.py.log
 echo '--------------------------------------' > /home/pi/log/server.py.log
 
-python3 /home/pi/raspberry-scratch-server/server.py handle_exit_signal > ./log/server.py.log &
+python3 /home/pi/raspberry-scratch-server/server.py handle_exit_signal > /home/pi/log/server.py.log &
 
 echo ''
 echo 'Start Browser'
