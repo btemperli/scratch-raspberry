@@ -93,6 +93,14 @@ Edit > Preferences > General
 ️[✔] Don't ask options on launch executable file
 ```
 
+Install in chromium the extension "virtual keyboard" directly in the user-data-dir "/home/pi/log". To do this, start chromium
+with:
+
+    $ /usr/bin/chromium --user-data-dir=/home/pi/chromium-data https://facebook.com
+    $ /usr/bin/chromium --kiosk --user-data-dir=/home/pi/chromium-data https://facebook.com
+
+And then install the chromium-extension via the menu. With the second command you can check if the extension is working.
+
 ### Running
 
 After the preparation, there should be an app on the desktop to run. Just double-click it.

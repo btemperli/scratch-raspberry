@@ -37,6 +37,9 @@ mkdir /home/pi/log
 touch /home/pi/log/server.py.log
 touch /home/pi/log/chromium.log
 
+# chromium
+mkdir -p /home/pi/chromium-data
+
 echo ''
 echo 'Start Python server'
 echo '--------------------------------------'
@@ -54,7 +57,7 @@ echo ''
 
 echo 'chromium output' > /home/pi/log/chromium.log
 echo '--------------------------------------' > /home/pi/log/chromium.log
-/usr/bin/chromium --kiosk --enable-logging --v=1 --user-data-dir=/home/pi/log /home/pi/scratch-raspberry/scratch-gui/build/index.html &
+/usr/bin/chromium --kiosk --enable-logging --v=1 --user-data-dir=/home/pi/chromium-data /home/pi/scratch-raspberry/scratch-gui/build/index.html &
 
 echo '--------------------------------------'
 echo 'System is up and running. Have fun!'
