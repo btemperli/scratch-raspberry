@@ -97,15 +97,26 @@ Install in chromium the extension "virtual keyboard" directly in the user-data-d
 with:
 
     $ /usr/bin/chromium --user-data-dir=/home/pi/chromium-data https://facebook.com
-    $ /usr/bin/chromium --kiosk --user-data-dir=/home/pi/chromium-data https://facebook.com
 
-And then install the chromium-extension via the menu. With the second command you can check if the extension is working.
+With the first command, install the chromium-extension via the menu.
+
+*Manage Extensions &rarr; Open Chrome Web Store &rarr; [Virtual Keyboard](https://chrome.google.com/webstore/detail/virtual-keyboard/pflmllfnnabikmfkkaddkoolinlfninn)*
+
+Change the settings, that the virtual keyboard extension has access to file URLs:
+
+*Manage Extensions &rarr; Virtual Keyboard &rarr; Allow access to file URLs* 
+
+In the extension-options of this extension you can change the keyboard layout if you want.
+
+Now you can check if the keyboard is working:
+
+    $ /usr/bin/chromium --kiosk --user-data-dir=/home/pi/chromium-data https://facebook.com
 
 ### Running
 
 After the preparation, there should be an app on the desktop to run. Just double-click it.
 
-Otherwise you can start it by running:
+Otherwise you can start it by running on the raspberry pi (from the display, not via SSH):
 
 ```
 $ ./run-on-raspi.sh
