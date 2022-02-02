@@ -20,7 +20,8 @@ echo '--------------------------------------'
 echo ''
 
 cd scratch-gui
-npm ci --production
+# remove --production because of the dev-modules mkdirp & raf
+npm ci
 npm link scratch-vm
 npm run build
 cd ..
