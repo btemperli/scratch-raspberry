@@ -27,6 +27,13 @@ npm run build
 cd ..
 
 echo ''
+echo 'Prepare Server'
+echo '--------------------------------------'
+echo ''
+
+cp /home/pi/raspberry-scratch-server/font5x8.bin /home/pi/font5x8.bin
+
+echo ''
 echo 'Prepare App on Desktop'
 echo '--------------------------------------'
 echo ''
