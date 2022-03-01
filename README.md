@@ -25,6 +25,11 @@ Both repositories were forked and supplemented with an own extension based on Sc
 ```
 $ curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 $ sudo apt install nodejs
+# make sure, npm runs without sudo.
+$ mkdir ~/.npm-global
+$ npm config set prefix '~/.npm-global'
+$ export PATH=~/.npm-global/bin:$PATH
+$ source ~/.profile
 $ node --version
 $ npm --version
 $ npm install -g npm
@@ -40,6 +45,12 @@ To install packages without sudo, checkout this one here: https://docs.npmjs.com
 $ git submodule foreach --recursive git clean -xfd
 $ git submodule foreach --recursive git reset --hard
 $ git submodule update --init --recursive --progress
+```
+
+or run the prepared script
+
+```
+$ ./update-submodules.sh
 ```
 
 ## Running Scratch locally on a computer
