@@ -18,6 +18,9 @@ Both repositories were forked and supplemented with an own extension based on Sc
 
 - Raspberry Pi 4 (or 3) with the 64 bit Debian buster
 - chromium as browser for running scratch
+- Prepare Raspberry with the basics:
+  - SSH-Access (passwordless if needed)
+  - [Remote Desktop Access](https://raspberrypi.stackexchange.com/a/79626/127427)
 
 ## Installation
 
@@ -25,6 +28,7 @@ Both repositories were forked and supplemented with an own extension based on Sc
 ```
 $ curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 $ sudo apt install nodejs
+
 # make sure, npm runs without sudo.
 $ mkdir ~/.npm-global
 $ npm config set prefix '~/.npm-global'
