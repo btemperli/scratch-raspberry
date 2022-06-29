@@ -108,6 +108,8 @@ Edit > Preferences > General
 ️[✔] Don't ask options on launch executable file
 ```
 
+#### Virtual Keyboard
+
 Install in chromium the extension "virtual keyboard" directly in the user-data-dir "/home/pi/log". To do this, start chromium
 with:
 
@@ -126,6 +128,16 @@ In the extension-options of this extension you can change the keyboard layout if
 Now you can check if the keyboard is working:
 
     $ /usr/bin/chromium --kiosk --user-data-dir=/home/pi/chromium-data https://facebook.com
+
+#### Autostart
+
+Add the Scratch-Application to the autostart:
+
+    $ sudo nano /etc/xdg/lxsession/LXDE-pi/autostart
+
+Now add the following line before the screensaver line:
+
+    @sudo sh /home/pi/scratch-raspberry/system/launcher.sh
 
 ### Running
 
